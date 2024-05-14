@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Extract_Links" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1205,923" sap2010:WorkflowViewState.IdRef="Extract_Links_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Extract_Links" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2433.3333333333335,983.3333333333334" sap2010:WorkflowViewState.IdRef="Extract_Links_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -40,6 +40,7 @@
       <x:String>UiPath.Platform.ObjectLibrary</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -89,15 +90,24 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Extract_Links" sap:VirtualizedContainerService.HintSize="574,858" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Extract_Links" sap:VirtualizedContainerService.HintSize="574,861.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Extract_data_from_website" sap:VirtualizedContainerService.HintSize="512,770" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Extract_data_from_website" sap:VirtualizedContainerService.HintSize="512,773.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="OutPutLinks" />
       </Sequence.Variables>
@@ -106,22 +116,23 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: - Pagina 130" sap:VirtualizedContainerService.HintSize="450,659" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="bff97625-9482-46f5-b092-b3793606ecdf" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: - Pagina 130" sap:VirtualizedContainerService.HintSize="450,662.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="bff97625-9482-46f5-b092-b3793606ecdf" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,418" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,420.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Default="IPhone" Name="in_SearchItem" />
+                <Variable x:TypeArguments="sd:DataTable" Name="LA" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[OutPutLinks]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='products_usrl'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="354,190" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="bff97625-9482-46f5-b092-b3793606ecdf" Timeout="5" Version="V3">
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[OutPutLinks]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='products_usrl'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="354,192" sap2010:WorkflowViewState.IdRef="NExtractData_1" InteractionMode="Simulate" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="bff97625-9482-46f5-b092-b3793606ecdf" Timeout="5" Version="V3">
                 <uix:NExtractData.NextLink>
                   <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/2" CvTextArea="1281, 996, 138, 24" CvTextArgument="Urmatoarea" CvType="Text" DesignTimeRectangle="1145, 1038, 140, 74" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Următoarea' parentid='pages' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Următoarea' parentid='pages' tag='A' type='' class='' check:innerText='Următoarea' /&gt;" Guid="5cbfede2-588f-41af-9850-8e540137d0f3" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='- Pagina 2' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" WaitForReadyArgument="None" />
                 </uix:NExtractData.NextLink>
@@ -135,12 +146,12 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NExtractData>
-              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[OutPutLinks]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="354,141" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="urls" WorkbookPath="urls.XLSX" />
+              <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[OutPutLinks]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="354,141.33333333333334" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="urls" WorkbookPath="urls.XLSX" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-13, -13, 3226, 1930" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFkSURBVDhPY8AKpshpM0yTUwKzU+SDGFLlrjIky60B84kCU2ULgQb8Bxq0Gqj5O0MKkJ0iFwKVJQL8Z2DknixfwjVd7qp4rdxG3jSFeKgMYfC/j0/of7fItP89Ip+B+D8UA9miU/+38wtClWEH/7tEJYCKbyFpBOMXNQL/f7YLg9g3/08QE4cqxwT/e4R3oGtGxt/ahED0FqhyVPC/V0wfXQMMPyznB9Ov6gQgYn3iulBtCPC/WzgHWRNe3CucDdWGACayrNkKohzH/n99dRYfBqkxlmHNg2pDAaB4/vfkyZMX/3GAhw8fPgepAeJwkAZ0wAPEH+zt7Q9C1WMAW1vbg0A1H4FYAKQBG8gC4n9RUVEHfgEBVN9/EDsiImI/SA6Ic0AK8YEqIP7NzMz8XEND4ygIg9hAsT9AXAdSQAgwAvE1KN4NxCCb+4BYG4iJAk5A/B+IHcA8MkAoEO8BYpBLCAAGBgCUvxXB8bESaAAAAABJRU5ErkJggg==" InformativeScreenshot="95071a6b1fb46b901a2506e1de3daa26.jpg" Selector="&lt;html app='chrome.exe' title='- Pagina 130' /&gt;" Title="ro.openfoodfacts.org" Url="https://ro.openfoodfacts.org/130" />
+          <uix:TargetApp Area="-13, -13, 3226, 1930" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFkSURBVDhPY8AKpshpM0yTUwKzU+SDGFLlrjIky60B84kCU2ULgQb8Bxq0Gqj5O0MKkJ0iFwKVJQL8Z2DknixfwjVd7qp4rdxG3jSFeKgMYfC/j0/of7fItP89Ip+B+D8UA9miU/+38wtClWEH/7tEJYCKbyFpBOMXNQL/f7YLg9g3/08QE4cqxwT/e4R3oGtGxt/ahED0FqhyVPC/V0wfXQMMPyznB9Ov6gQgYn3iulBtCPC/WzgHWRNe3CucDdWGACayrNkKohzH/n99dRYfBqkxlmHNg2pDAaB4/vfkyZMX/3GAhw8fPgepAeJwkAZ0wAPEH+zt7Q9C1WMAW1vbg0A1H4FYAKQBG8gC4n9RUVEHfgEBVN9/EDsiImI/SA6Ic0AK8YEqIP7NzMz8XEND4ygIg9hAsT9AXAdSQAgwAvE1KN4NxCCb+4BYG4iJAk5A/B+IHcA8MkAoEO8BYpBLCAAGBgCUvxXB8bESaAAAAABJRU5ErkJggg==" InformativeScreenshot="95071a6b1fb46b901a2506e1de3daa26.jpg" Selector="&lt;html app='chrome.exe' title='- Pagina 130' /&gt;" Title="ro.openfoodfacts.org" Url="https://ro.openfoodfacts.org/1" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
     </Sequence>

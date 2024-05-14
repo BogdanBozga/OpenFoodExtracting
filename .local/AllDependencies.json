@@ -23736,20 +23736,12 @@
   },
   "logs": [
     {
-      "code": "NU1100",
+      "code": "NU1101",
       "level": "Error",
-      "message": "Unable to resolve 'TheHorselessNewspaper.HostingModel (>= 0.4.230605.1)' for 'net8.0-windows7.0'.",
+      "message": "Unable to find package TheHorselessNewspaper.HostingModel. No packages exist with this id in source(s): C:\\Users\\bozga\\AppData\\Local\\Programs\\UiPath\\Studio\\Packages, https://api.nuget.org/v3/index.json, https://gallery.uipath.com/api/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json",
       "libraryId": "TheHorselessNewspaper.HostingModel",
       "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'TheHorselessNewspaper.HostingModel (>= 0.4.230605.1)' for 'net8.0-windows7.0/win-x64'.",
-      "libraryId": "TheHorselessNewspaper.HostingModel",
-      "targetGraphs": [
+        "net8.0-windows7.0",
         "net8.0-windows7.0/win-x64"
       ]
     }

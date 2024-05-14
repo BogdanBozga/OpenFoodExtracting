@@ -14,8 +14,8 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "OutPutLinks&Sequence_2",
-        "out_ExtractedInfoDT&Sequence_1"
+        "out_ExtractedInfoDT&Sequence_1",
+        "OutPutLinks&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
@@ -25,10 +25,7 @@
       "Path": "ExtractProductInfo.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "CurentRowString&Sequence_8",
-        "Links&Sequence_9",
-        "ExtractDataTable&Sequence_9",
-        "InfoInString&Sequence_9",
+        "out_ExtractedInfoDT&Sequence_1",
         "CurentLinkSting&Sequence_6",
         "Name&Sequence_6",
         "Categorys&Sequence_6",
@@ -36,6 +33,7 @@
         "Ingredients&Sequence_6",
         "Alergens&Sequence_6",
         "Nutritions&Sequence_6",
+        "Name30&Sequence_6",
         "Nutrition&Sequence_7",
         "NutritionDataTable&Sequence_7",
         "Fats&Sequence_7",
@@ -48,7 +46,34 @@
         "Info&Sequence_7",
         "NutritionTable&Sequence_7",
         "LinkSplit&Sequence_7",
-        "out_ExtractedInfoDT&Sequence_1"
+        "CurentRowString&Sequence_8",
+        "Links&Sequence_9",
+        "ExtractDataTable&Sequence_9",
+        "InfoInString&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Extract Links.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_ExtractedInfoDT&Sequence_1",
+        "OutPutLinks&Sequence_3",
+        "in_SearchItem&Sequence_2",
+        "LA&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Extract data from website.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_ExtractedInfoDT&Sequence_3",
+        "in_SearchItem&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
