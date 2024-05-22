@@ -4,6 +4,7 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
+    "EN.ImageDownloader.Activities": "[1.0.0]",
     "HorselessNewspaper.Core.Workflow.Activities": "[0.4.230617.5]",
     "UiPath.Excel.Activities": "[2.23.2-preview]",
     "UiPath.Mail.Activities": "[1.22.1]",
