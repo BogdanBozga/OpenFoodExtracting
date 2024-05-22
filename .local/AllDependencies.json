@@ -125,6 +125,25 @@
           }
         }
       },
+      "EN.ImageDownloader.Activities/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll": {
+            "related": ".Design.xml;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "ExcelNumberFormat/1.0.10": {
         "type": "package",
         "compile": {
@@ -6360,6 +6379,25 @@
           }
         }
       },
+      "EN.ImageDownloader.Activities/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll": {
+            "related": ".Design.xml;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "ExcelNumberFormat/1.0.10": {
         "type": "package",
         "compile": {
@@ -12484,6 +12522,21 @@
         "lib/netstandard1.3/DocumentFormat.OpenXml.xml",
         "lib/netstandard2.0/DocumentFormat.OpenXml.dll",
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
+      ]
+    },
+    "EN.ImageDownloader.Activities/1.0.0": {
+      "sha512": "g1DzG3nqtp/v2kmi70PBqsQOL7/I13265uG0dYK8aWdH1H/I/atC3oKUWl6N4xp25D5q2S0nnmTcDhTI36RFcg==",
+      "type": "package",
+      "path": "en.imagedownloader.activities/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "en.imagedownloader.activities.1.0.0.nupkg.sha512",
+        "en.imagedownloader.activities.nuspec",
+        "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll",
+        "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.xml",
+        "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll",
+        "lib/net6.0-windows7.0/EN.ImageDownloader.Activities.xml",
+        "packageIcon.png"
       ]
     },
     "ExcelNumberFormat/1.0.10": {
@@ -23672,6 +23725,7 @@
   "projectFileDependencyGroups": {
     "": [],
     "net8.0-windows7.0": [
+      "EN.ImageDownloader.Activities >= 1.0.0 <= 1.0.0",
       "HorselessNewspaper.Core.Workflow.Activities >= 0.4.230617.5 <= 0.4.230617.5",
       "UiPath.Excel.Activities >= 2.23.2-preview <= 2.23.2-preview",
       "UiPath.Mail.Activities >= 1.22.1 <= 1.22.1",
@@ -23694,6 +23748,11 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "dependencies": {
+          "EN.ImageDownloader.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.0, 1.0.0]"
+          },
           "HorselessNewspaper.Core.Workflow.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -23736,20 +23795,12 @@
   },
   "logs": [
     {
-      "code": "NU1100",
+      "code": "NU1101",
       "level": "Error",
-      "message": "Unable to resolve 'TheHorselessNewspaper.HostingModel (>= 0.4.230605.1)' for 'net8.0-windows7.0'.",
+      "message": "Unable to find package TheHorselessNewspaper.HostingModel. No packages exist with this id in source(s): C:\\Users\\bozga\\AppData\\Local\\Programs\\UiPath\\Studio\\Packages, https://api.nuget.org/v3/index.json, https://gallery.uipath.com/api/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json, https://pkgs.dev.azure.com/uipath/Public.Feeds/_packaging/UiPath-Official/nuget/v3/index.json",
       "libraryId": "TheHorselessNewspaper.HostingModel",
       "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1100",
-      "level": "Error",
-      "message": "Unable to resolve 'TheHorselessNewspaper.HostingModel (>= 0.4.230605.1)' for 'net8.0-windows7.0/win-x64'.",
-      "libraryId": "TheHorselessNewspaper.HostingModel",
-      "targetGraphs": [
+        "net8.0-windows7.0",
         "net8.0-windows7.0/win-x64"
       ]
     }

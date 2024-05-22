@@ -782,7 +782,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <Assign DisplayName="Assign count" sap:VirtualizedContainerService.HintSize="434,85.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_110">
+                                <Assign DisplayName="Assign count" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_110">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Object">[DRow("Count")]</OutArgument>
                                   </Assign.To>
