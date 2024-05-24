@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ExtractProductInfo" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1113.3333333333333,8501.333333333334" sap2010:WorkflowViewState.IdRef="ExtractProductInfo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:eia="clr-namespace:EN.ImageDownloader.Activities;assembly=EN.ImageDownloader.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractProductInfo" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="885.6,8910.4" sap2010:WorkflowViewState.IdRef="ExtractProductInfo_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:eia="clr-namespace:EN.ImageDownloader.Activities;assembly=EN.ImageDownloader.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -127,7 +127,7 @@
       <AssemblyReference>EN.ImageDownloader.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ExtractProductInfo" sap:VirtualizedContainerService.HintSize="896,8436.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence DisplayName="ExtractProductInfo" sap:VirtualizedContainerService.HintSize="896,8845.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="Links" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
@@ -152,9 +152,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[Links]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="834,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Urls" WorkbookPath="test_urls.XLSX" />
-    <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="834,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;5000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ingredients&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Allergens&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Info&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Link&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;img1ulr&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;img2ulr&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;img3ulr&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:FileExistsX DisplayName="File Exists" Exists="[FoodExists]" sap:VirtualizedContainerService.HintSize="834,168.66666666666666" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="FoodExtracted.XLSX">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[Links]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="833.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Urls" WorkbookPath="urls.XLSX" />
+    <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="833.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;5000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Ingredients&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Allergens&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Info&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Link&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Count&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;img1ulr&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;img2ulr&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;img3ulr&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:FileExistsX DisplayName="File Exists" Exists="[FoodExists]" sap:VirtualizedContainerService.HintSize="833.6,166.4" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="FoodExtracted.XLSX">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -162,7 +162,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:FileExistsX>
-    <If Condition="[FoodExists  = True]" sap:VirtualizedContainerService.HintSize="834,866" sap2010:WorkflowViewState.IdRef="If_5">
+    <If Condition="[FoodExists  = True]" sap:VirtualizedContainerService.HintSize="833.6,853.6" sap2010:WorkflowViewState.IdRef="If_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -170,13 +170,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,501.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,492" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_27">
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_27">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[CheckNeed]</OutArgument>
             </Assign.To>
@@ -184,8 +184,8 @@
               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:ReadCsvFile DataTable="[AlreadyProcessed]" Delimitator="Comma" DisplayName="Read CSV ()" FilePath="FoodExtracted.XLSX" sap:VirtualizedContainerService.HintSize="434,191.33333333333334" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
-          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_43">
+          <ui:ReadCsvFile DataTable="[AlreadyProcessed]" Delimitator="Comma" DisplayName="Read CSV ()" FilePath="FoodExtracted.XLSX" sap:VirtualizedContainerService.HintSize="433.6,187.2" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" />
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_43">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[Exists]</OutArgument>
             </Assign.To>
@@ -196,13 +196,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,191.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_28">
+          <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_28">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[CheckNeed]</OutArgument>
             </Assign.To>
@@ -213,7 +213,7 @@
         </Sequence>
       </If.Else>
     </If>
-    <Assign sap:VirtualizedContainerService.HintSize="834,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_24">
+    <Assign sap:VirtualizedContainerService.HintSize="833.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_24">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
       </Assign.To>
@@ -221,13 +221,13 @@
         <InArgument x:TypeArguments="x:Int32">0</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[MainCount]" DataTable="[Links]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="834,6826" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[MainCount]" DataTable="[Links]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="833.6,7252.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentLink" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="784,6626" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="800,7055.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="CurentLinkSting" />
               <Variable x:TypeArguments="x:String" Default="None" Name="Name" />
@@ -244,7 +244,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="722,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_23">
+            <Assign sap:VirtualizedContainerService.HintSize="737.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_23">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[CurentLinkSting]</OutArgument>
               </Assign.To>
@@ -258,9 +258,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <If Condition="[CheckNeed = True]" sap:VirtualizedContainerService.HintSize="722,6484" sap2010:WorkflowViewState.IdRef="If_7">
+            <If Condition="[CheckNeed = True]" sap:VirtualizedContainerService.HintSize="737.6,6912" sap2010:WorkflowViewState.IdRef="If_7">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,4563.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="704,4995.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="AlreadyProcessedString" />
                   </Sequence.Variables>
@@ -269,12 +269,12 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[CurentLinkSting]" />
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[AlreadyProcessed]" />
-                  <ui:OutputDataTable DataTable="[AlreadyProcessed]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="626,114" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[AlreadyProcessedString]" />
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[AlreadyProcessedString.Contains(CurentLinkSting)]" />
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="626,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Done&quot;]" />
-                  <If Condition="[AlreadyProcessedString.Contains(CurentLinkSting)]" sap:VirtualizedContainerService.HintSize="626,3658" sap2010:WorkflowViewState.IdRef="If_2">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="641.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[CurentLinkSting]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="641.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[AlreadyProcessed]" />
+                  <ui:OutputDataTable DataTable="[AlreadyProcessed]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="641.6,112.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[AlreadyProcessedString]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="641.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[AlreadyProcessedString.Contains(CurentLinkSting)]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="641.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Done&quot;]" />
+                  <If Condition="[AlreadyProcessedString.Contains(CurentLinkSting)]" sap:VirtualizedContainerService.HintSize="641.6,4098.4" sap2010:WorkflowViewState.IdRef="If_2">
                     <If.Then>
                       <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
@@ -282,18 +282,18 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This link has already been processed &quot; + CurentLinkSting]" />
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;This link has already been processed &quot; + CurentLinkSting]" />
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="592,3243.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="608,3684.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="530,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_31">
+                        <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_31">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                           </Assign.To>
@@ -301,13 +301,13 @@
                             <InArgument x:TypeArguments="x:Int32">[count + 1]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,3041.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="1e42b927-b464-4df8-ae88-26d3cded1b49" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="628.8,4556" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="1e42b927-b464-4df8-ae88-26d3cded1b49" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2799.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="595.2,4339.2" sap2010:WorkflowViewState.IdRef="Sequence_71">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Default="None" Name="Nutrition" />
                                   <Variable x:TypeArguments="sd:DataTable" Name="NutritionDataTable" />
@@ -331,7 +331,7 @@
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Info]" DisplayName="Extract Info" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Ìnfo'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NExtractData_12" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
+                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Info]" DisplayName="Extract Info" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Ìnfo'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_12" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
                                   <uix:NExtractData.Target>
                                     <uix:TargetAnchorable DesignTimeRectangle="63, -3920, 1078, 2467" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='row' parentid='product' tag='DIV' /&gt;" Guid="0ad968e9-edaa-4036-b754-c95dec77d9f1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - Ferrero - 200 g' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                   </uix:NExtractData.Target>
@@ -342,7 +342,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NExtractData>
-                                <uix:NGetText ContinueOnError="[Ingredients = &quot;None&quot;]" DisplayName="Get Ingredients" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Ingredients]" Timeout="[Timout]" Version="V3">
+                                <uix:NGetText ContinueOnError="[Ingredients = &quot;None&quot;]" DisplayName="Get Ingredients" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Ingredients]" Timeout="[Timout]" Version="V3">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/product/3017620422003/nutella" DesignTimeRectangle="434, 1285, 2324, 89" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='panel_text' parentid='panel_ingredients_content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel_text' parentid='panel_ingredients_content' tag='DIV' type='' aaname='                                                  Sucre, huile de palme,  13%, cacao maigre 7,4%,  écrémé en poudre 6,6%,  en poudre, émulsifiants: lécithines [), vanilline. Sans gluten.            ' /&gt;" Guid="e92f2301-0503-478c-8375-9f2daa59f2d4" InformativeScreenshot="35412d580e7fc0337e51bc057e296be8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - 400 g' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
                                   </uix:NGetText.Target>
@@ -353,7 +353,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <uix:NGetText ContinueOnError="[Alergens = &quot;None&quot;]" DisplayName="Get Text 'Alergeni: Lapte,'" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Alergens]" Timeout="[Timout]" Version="V3">
+                                <uix:NGetText ContinueOnError="[Alergens = &quot;None&quot;]" DisplayName="Get Text 'Alergeni: Lapte,'" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Alergens]" Timeout="[Timout]" Version="V3">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/product/3017620422003/nutella" DesignTimeRectangle="434, 1138, 2324, 45" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='panel_text' idx='2' parentid='panel_ingredients_content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel_text' type='' parentid='panel_ingredients_content' tag='DIV' /&gt;" Guid="e09cc26b-cbe1-420b-bcc9-c25e97454681" ImageBase64="" InformativeScreenshot="ab25e3b627fc4dff5eb14a60b56e8b3c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - 400 g' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                   </uix:NGetText.Target>
@@ -364,7 +364,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[NutritionTable]" DisplayName="Extract Nutrition" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Valori nutriționale' ReferenceIdx='0' Name='Valori nutriționale'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' ReferenceIdx='1' Name='Așa cum a fost vândut pentru 100 g / 100 ml'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' ReferenceIdx='2' Name='Așa cum a fost vândut per porție (1.0 bottle (500.0 ml))'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Comparat cu: Băuturi nealcoolice' ReferenceIdx='3' Name='Comparat cu: Băuturi nealcoolice'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Valori nutriționale' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' attr='fulltext' /&gt;&lt;column name='Comparat cu: Băuturi nealcoolice' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NExtractData_13" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
+                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[NutritionTable]" DisplayName="Extract Nutrition" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Valori nutriționale' ReferenceIdx='0' Name='Valori nutriționale'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' ReferenceIdx='1' Name='Așa cum a fost vândut pentru 100 g / 100 ml'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' ReferenceIdx='2' Name='Așa cum a fost vândut per porție (1.0 bottle (500.0 ml))'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Comparat cu: Băuturi nealcoolice' ReferenceIdx='3' Name='Comparat cu: Băuturi nealcoolice'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Valori nutriționale' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' attr='fulltext' /&gt;&lt;column name='Comparat cu: Băuturi nealcoolice' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_13" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
                                   <uix:NExtractData.Target>
                                     <uix:TargetAnchorable DesignTimeRectangle="131, 509, 1688, 1100" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="df4c1998-db2b-4402-8da1-298a58031cee" InformativeScreenshot="cda1fda44bfbe4047eacd752872ebe55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Original 500ml Bottle - Coca-Cola - 500 ml' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                   </uix:NExtractData.Target>
@@ -375,7 +375,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NExtractData>
-                                <uast:SplitText DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="SplitText_7" Results="[LinkSplit]" Separator="/" SeparatorKey="Custom" Source="[CurentLinkSting]">
+                                <uast:SplitText DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="SplitText_7" Results="[LinkSplit]" Separator="/" SeparatorKey="Custom" Source="[CurentLinkSting]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -383,7 +383,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uast:SplitText>
-                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[LinkSplit.Last]">
+                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[LinkSplit.Last]">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -391,7 +391,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </WriteLine>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_96">
+                                <Assign sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_96">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
                                   </Assign.To>
@@ -405,7 +405,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <If Condition="[Name.Length &gt; 30]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_29">
+                                <If Condition="[Name.Length &gt; 30]" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="If_29">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -447,7 +447,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[NutritionTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteRange_7" SheetName="[Name30]" WorkbookPath="Nutritions.XLSX">
+                                <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[NutritionTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="WriteRange_7" SheetName="[Name30]" WorkbookPath="Nutritions.XLSX">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -455,7 +455,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:WriteRange>
-                                <Assign DisplayName="Assign Init Info" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_99">
+                                <Assign DisplayName="Assign Init Info" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_99">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[InfoInString]</OutArgument>
                                   </Assign.To>
@@ -471,7 +471,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Info]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Info]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
                                   <ui:ForEachRow.Body>
                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                       <ActivityAction.Argument>
@@ -505,7 +505,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:ForEachRow>
-                                <uix:NGetText ContinueOnError="[CO2 = &quot;None&quot;]" DisplayName="Get CO2" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[CO2]" Timeout="[Timout]" Version="V3">
+                                <uix:NGetText ContinueOnError="[CO2 = &quot;None&quot;]" DisplayName="Get CO2" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[CO2]" Timeout="[Timout]" Version="V3">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/product/3017620422003/nutella" DesignTimeRectangle="582, 890, 430, 37" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='panel_carbon_footprint' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='panel_carbon_footprint' tag='SPAN' type='' class='' /&gt;" Guid="f5b9b018-b325-4605-ba6f-a6edab205f56" ImageBase64="" InformativeScreenshot="77cb0b9e9b1188e92453173f3e5deaae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - 400 g' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                   </uix:NGetText.Target>
@@ -516,7 +516,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <uix:NGetText ContinueOnError="[Packeging = &quot;None&quot;]" DisplayName="Get Packeging" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Packeging]" Timeout="[Timout]" Version="V3">
+                                <uix:NGetText ContinueOnError="[Packeging = &quot;None&quot;]" DisplayName="Get Packeging" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Packeging]" Timeout="[Timout]" Version="V3">
                                   <uix:NGetText.Target>
                                     <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/product/3017620422003/nutella" DesignTimeRectangle="410, 1147, 1552, 59" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='panel_packaging_recycling' tag='H4' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='panel_packaging_recycling' tag='H4' type='' class='evaluation_bad_title' /&gt;" Guid="d5702208-79d2-4053-adc2-4191c429ac21" ImageBase64="" InformativeScreenshot="4382e6c00c994411acb7f6e5f0e480b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - 400 g' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                                   </uix:NGetText.Target>
@@ -527,7 +527,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_101">
+                                <Assign sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_101">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[img1url]</OutArgument>
                                   </Assign.To>
@@ -541,7 +541,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetAttribute_16">
+                                <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="GetAttribute_16">
                                   <ui:GetAttribute.Result>
                                     <OutArgument x:TypeArguments="x:String">[img1url]</OutArgument>
                                   </ui:GetAttribute.Result>
@@ -559,25 +559,45 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:GetAttribute>
-                                <If Condition="[not img1url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_30">
+                                <If Condition="[not img1url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="532.8,748" sap2010:WorkflowViewState.IdRef="If_30">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,243.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="499.2,475.2" sap2010:WorkflowViewState.IdRef="Sequence_75">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <eia:ImageDownloader ContinueOnError="{x:Null}" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="354,158.66666666666666" sap2010:WorkflowViewState.IdRef="ImageDownloader_17" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_1.png&quot;]" PhotoURL="[img1url]" />
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,388.8" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                        <TryCatch.Try>
+                                          <eia:ImageDownloader ContinueOnError="[img1url = &quot;None&quot;]" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="ImageDownloader_17" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_1.png&quot;]" PhotoURL="[img1url]" />
+                                        </TryCatch.Try>
+                                        <TryCatch.Catches>
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="s:Exception">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                              </ActivityAction.Argument>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Fail download&quot;]" />
+                                            </ActivityAction>
+                                          </Catch>
+                                        </TryCatch.Catches>
+                                      </TryCatch>
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,101.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_76">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -586,7 +606,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_102">
+                                <Assign sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_102">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[img2url]</OutArgument>
                                   </Assign.To>
@@ -600,7 +620,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetAttribute_17">
+                                <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="532.8,236.8" sap2010:WorkflowViewState.IdRef="GetAttribute_17">
                                   <ui:GetAttribute.Result>
                                     <OutArgument x:TypeArguments="x:String">[img2url]</OutArgument>
                                   </ui:GetAttribute.Result>
@@ -613,30 +633,50 @@
                                   </ui:GetAttribute.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:GetAttribute>
-                                <If Condition="[not img2url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_31">
+                                <If Condition="[not img2url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="532.8,748" sap2010:WorkflowViewState.IdRef="If_31">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,243.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="499.2,475.2" sap2010:WorkflowViewState.IdRef="Sequence_77">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <eia:ImageDownloader ContinueOnError="{x:Null}" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="354,158.66666666666666" sap2010:WorkflowViewState.IdRef="ImageDownloader_18" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_2.png&quot;]" PhotoURL="[img2url]" />
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,388.8" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                        <TryCatch.Try>
+                                          <eia:ImageDownloader ContinueOnError="[img2url = &quot;None&quot;]" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="ImageDownloader_18" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_2.png&quot;]" PhotoURL="[img2url]" />
+                                        </TryCatch.Try>
+                                        <TryCatch.Catches>
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="s:Exception">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                              </ActivityAction.Argument>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Fail download&quot;]" />
+                                            </ActivityAction>
+                                          </Catch>
+                                        </TryCatch.Catches>
+                                      </TryCatch>
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,101.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_78">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -645,7 +685,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_103">
+                                <Assign sap:VirtualizedContainerService.HintSize="532.8,114.4" sap2010:WorkflowViewState.IdRef="Assign_103">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:String">[img3url]</OutArgument>
                                   </Assign.To>
@@ -653,7 +693,7 @@
                                     <InArgument x:TypeArguments="x:String">None</InArgument>
                                   </Assign.Value>
                                 </Assign>
-                                <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="434,238" sap2010:WorkflowViewState.IdRef="GetAttribute_18">
+                                <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="532.8,236.8" sap2010:WorkflowViewState.IdRef="GetAttribute_18">
                                   <ui:GetAttribute.Result>
                                     <OutArgument x:TypeArguments="x:String">[img3url]</OutArgument>
                                   </ui:GetAttribute.Result>
@@ -671,7 +711,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:GetAttribute>
-                                <If Condition="[not img3url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_32">
+                                <If Condition="[not img3url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="If_32">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -679,17 +719,37 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,243.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="499.2,475.2" sap2010:WorkflowViewState.IdRef="Sequence_79">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <eia:ImageDownloader ContinueOnError="{x:Null}" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="354,158.66666666666666" sap2010:WorkflowViewState.IdRef="ImageDownloader_19" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_3.png&quot;]" PhotoURL="[img3url]" />
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="436.8,388.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                        <TryCatch.Try>
+                                          <eia:ImageDownloader ContinueOnError="{x:Null}" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="ImageDownloader_19" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_3.png&quot;]" PhotoURL="[img3url]" />
+                                        </TryCatch.Try>
+                                        <TryCatch.Catches>
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="403.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ActivityAction x:TypeArguments="s:Exception">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                              </ActivityAction.Argument>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;Fail download&quot;]" />
+                                            </ActivityAction>
+                                          </Catch>
+                                        </TryCatch.Catches>
+                                      </TryCatch>
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,101.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_80">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -698,7 +758,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <Assign DisplayName="Assign DRow" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_104">
+                                <Assign DisplayName="Assign DRow" sap:VirtualizedContainerService.HintSize="532.8,114.4" sap2010:WorkflowViewState.IdRef="Assign_104">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="sd:DataRow">[DRow]</OutArgument>
                                   </Assign.To>
@@ -712,7 +772,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <Assign DisplayName="Assign Info" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_105">
+                                <Assign DisplayName="Assign Info" sap:VirtualizedContainerService.HintSize="532.8,114.4" sap2010:WorkflowViewState.IdRef="Assign_105">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Object">[DRow("Info")]</OutArgument>
                                   </Assign.To>
@@ -726,7 +786,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <Assign DisplayName="Assign Name" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_106">
+                                <Assign DisplayName="Assign Name" sap:VirtualizedContainerService.HintSize="532.8,114.4" sap2010:WorkflowViewState.IdRef="Assign_106">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Object">[DRow("Name")]</OutArgument>
                                   </Assign.To>
@@ -740,7 +800,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <Assign DisplayName="Assign Ingredients" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_107">
+                                <Assign DisplayName="Assign Ingredients" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_107">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Object">[DRow("Ingredients")]</OutArgument>
                                   </Assign.To>
@@ -754,7 +814,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </Assign>
-                                <Assign DisplayName="Assign Allergens" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_108">
+                                <Assign DisplayName="Assign Allergens" sap:VirtualizedContainerService.HintSize="532.8,56.8" sap2010:WorkflowViewState.IdRef="Assign_108">
                                   <Assign.To>
                                     <OutArgument x:TypeArguments="x:Object">[DRow("Allergens")]</OutArgument>
                                   </Assign.To>
@@ -858,14 +918,14 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="688,1758" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="688,1755.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="626,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_25">
+                  <Assign sap:VirtualizedContainerService.HintSize="625.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_25">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[count]</OutArgument>
                     </Assign.To>
@@ -873,13 +933,13 @@
                       <InArgument x:TypeArguments="x:Int32">[count + 1]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="626,273.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="1e42b927-b464-4df8-ae88-26d3cded1b49" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="625.6,271.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="1e42b927-b464-4df8-ae88-26d3cded1b49" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2787.2" sap2010:WorkflowViewState.IdRef="Sequence_61">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Default="None" Name="Nutrition" />
                             <Variable x:TypeArguments="sd:DataTable" Name="NutritionDataTable" />
@@ -903,7 +963,7 @@
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Info]" DisplayName="Extract Info" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Ìnfo'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NExtractData_10" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Info]" DisplayName="Extract Info" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Ìnfo'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_10" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
                             <uix:NExtractData.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="63, -3920, 1078, 2467" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='row' parentid='product' tag='DIV' /&gt;" Guid="0ad968e9-edaa-4036-b754-c95dec77d9f1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - Ferrero - 200 g' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                             </uix:NExtractData.Target>
@@ -914,7 +974,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NExtractData>
-                          <uix:NGetText ContinueOnError="[Ingredients = &quot;None&quot;]" DisplayName="Get Ingredients" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Ingredients]" Timeout="[Timout]" Version="V3">
+                          <uix:NGetText ContinueOnError="[Ingredients = &quot;None&quot;]" DisplayName="Get Ingredients" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Ingredients]" Timeout="[Timout]" Version="V3">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/product/3017620422003/nutella" DesignTimeRectangle="434, 1285, 2324, 89" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='panel_text' parentid='panel_ingredients_content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel_text' parentid='panel_ingredients_content' tag='DIV' type='' aaname='                                                  Sucre, huile de palme,  13%, cacao maigre 7,4%,  écrémé en poudre 6,6%,  en poudre, émulsifiants: lécithines [), vanilline. Sans gluten.            ' /&gt;" Guid="e92f2301-0503-478c-8375-9f2daa59f2d4" InformativeScreenshot="35412d580e7fc0337e51bc057e296be8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - 400 g' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
                             </uix:NGetText.Target>
@@ -925,7 +985,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <uix:NGetText ContinueOnError="[Alergens = &quot;None&quot;]" DisplayName="Get Text 'Alergeni: Lapte,'" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Alergens]" Timeout="[Timout]" Version="V3">
+                          <uix:NGetText ContinueOnError="[Alergens = &quot;None&quot;]" DisplayName="Get Text 'Alergeni: Lapte,'" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" TextString="[Alergens]" Timeout="[Timout]" Version="V3">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://ro.openfoodfacts.org/product/3017620422003/nutella" DesignTimeRectangle="434, 1138, 2324, 45" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='panel_text' idx='2' parentid='panel_ingredients_content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='panel_text' type='' parentid='panel_ingredients_content' tag='DIV' /&gt;" Guid="e09cc26b-cbe1-420b-bcc9-c25e97454681" ImageBase64="" InformativeScreenshot="ab25e3b627fc4dff5eb14a60b56e8b3c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Nutella - 400 g' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                             </uix:NGetText.Target>
@@ -936,7 +996,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[NutritionTable]" DisplayName="Extract Nutrition" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Valori nutriționale' ReferenceIdx='0' Name='Valori nutriționale'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' ReferenceIdx='1' Name='Așa cum a fost vândut pentru 100 g / 100 ml'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' ReferenceIdx='2' Name='Așa cum a fost vândut per porție (1.0 bottle (500.0 ml))'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Comparat cu: Băuturi nealcoolice' ReferenceIdx='3' Name='Comparat cu: Băuturi nealcoolice'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Valori nutriționale' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' attr='fulltext' /&gt;&lt;column name='Comparat cu: Băuturi nealcoolice' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NExtractData_11" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[NutritionTable]" DisplayName="Extract Nutrition" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Valori nutriționale' ReferenceIdx='0' Name='Valori nutriționale'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' ReferenceIdx='1' Name='Așa cum a fost vândut pentru 100 g / 100 ml'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' ReferenceIdx='2' Name='Așa cum a fost vândut per porție (1.0 bottle (500.0 ml))'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA; &lt;Column xsi:type='DataColumn' ReferenceName='Comparat cu: Băuturi nealcoolice' ReferenceIdx='3' Name='Comparat cu: Băuturi nealcoolice'&gt;&#xA;  &lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;  &lt;ValidationErrorMessage /&gt;&#xA;  &lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;  &lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;  &lt;Format xsi:type='TextColumnFormat' /&gt;&#xA; &lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Valori nutriționale' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;pentru 100 g / 100 ml' attr='fulltext' /&gt;&lt;column name='Așa cum a fost vândut&amp;#xA;per porție (1.0 bottle (500.0 ml))' attr='fulltext' /&gt;&lt;column name='Comparat cu: Băuturi nealcoolice' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NExtractData_11" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="1e42b927-b464-4df8-ae88-26d3cded1b49" Timeout="[Timout]" Version="V3">
                             <uix:NExtractData.Target>
                               <uix:TargetAnchorable DesignTimeRectangle="131, 509, 1688, 1100" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="df4c1998-db2b-4402-8da1-298a58031cee" InformativeScreenshot="cda1fda44bfbe4047eacd752872ebe55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Original 500ml Bottle - Coca-Cola - 500 ml' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                             </uix:NExtractData.Target>
@@ -947,7 +1007,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NExtractData>
-                          <uast:SplitText DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="SplitText_6" Results="[LinkSplit]" Separator="/" SeparatorKey="Custom" Source="[CurentLinkSting]">
+                          <uast:SplitText DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="SplitText_6" Results="[LinkSplit]" Separator="/" SeparatorKey="Custom" Source="[CurentLinkSting]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -955,7 +1015,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uast:SplitText>
-                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[LinkSplit.Last]">
+                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[LinkSplit.Last]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -963,7 +1023,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </WriteLine>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_78">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_78">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
                             </Assign.To>
@@ -977,7 +1037,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <If Condition="[Name.Length &gt; 30]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_25">
+                          <If Condition="[Name.Length &gt; 30]" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="If_25">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1019,7 +1079,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[NutritionTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="[Name30]" WorkbookPath="Nutritions.XLSX">
+                          <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[NutritionTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="WriteRange_6" SheetName="[Name30]" WorkbookPath="Nutritions.XLSX">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1158,7 +1218,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_94">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_94">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[img2url]</OutArgument>
                             </Assign.To>
@@ -1172,7 +1232,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetAttribute_14">
+                          <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="GetAttribute_14">
                             <ui:GetAttribute.Result>
                               <OutArgument x:TypeArguments="x:String">[img2url]</OutArgument>
                             </ui:GetAttribute.Result>
@@ -1190,7 +1250,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:GetAttribute>
-                          <If Condition="[not img2url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_27">
+                          <If Condition="[not img2url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="If_27">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1217,7 +1277,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_93">
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_93">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[img3url]</OutArgument>
                             </Assign.To>
@@ -1225,7 +1285,7 @@
                               <InArgument x:TypeArguments="x:String">None</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="434,238" sap2010:WorkflowViewState.IdRef="GetAttribute_15">
+                          <ui:GetAttribute Attribute="src" ContinueOnError="True" DisplayName="Get Attribute 'IMG  og_image'" sap:VirtualizedContainerService.HintSize="433.6,236.8" sap2010:WorkflowViewState.IdRef="GetAttribute_15">
                             <ui:GetAttribute.Result>
                               <OutArgument x:TypeArguments="x:String">[img3url]</OutArgument>
                             </ui:GetAttribute.Result>
@@ -1243,7 +1303,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:GetAttribute>
-                          <If Condition="[not img3url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_28">
+                          <If Condition="[not img3url.Equals(&quot;None&quot;)]" sap:VirtualizedContainerService.HintSize="449.6,484.79999999999995" sap2010:WorkflowViewState.IdRef="If_28">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1251,17 +1311,17 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,243.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,244" sap2010:WorkflowViewState.IdRef="Sequence_69">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <eia:ImageDownloader ContinueOnError="{x:Null}" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="354,158.66666666666666" sap2010:WorkflowViewState.IdRef="ImageDownloader_16" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_3.png&quot;]" PhotoURL="[img3url]" />
+                                <eia:ImageDownloader ContinueOnError="{x:Null}" DisplayName="Image Downloader" sap:VirtualizedContainerService.HintSize="353.6,157.6" sap2010:WorkflowViewState.IdRef="ImageDownloader_16" LocalPath="[&quot;images/img_&quot; + MainCount.ToString() + &quot;_3.png&quot;]" PhotoURL="[img3url]" />
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,101.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_70">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1270,7 +1330,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <Assign DisplayName="Assign DRow" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_83">
+                          <Assign DisplayName="Assign DRow" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_83">
                             <Assign.To>
                               <OutArgument x:TypeArguments="sd:DataRow">[DRow]</OutArgument>
                             </Assign.To>
@@ -1424,9 +1484,9 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
-                  <If Condition="[count &gt;= 10]" sap:VirtualizedContainerService.HintSize="626,1282.6666666666667" sap2010:WorkflowViewState.IdRef="If_3">
+                  <If Condition="[count &gt;= 10]" sap:VirtualizedContainerService.HintSize="625.6,1284" sap2010:WorkflowViewState.IdRef="If_3">
                     <If.Then>
-                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1012.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1014.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
