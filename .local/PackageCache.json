@@ -6,10 +6,17 @@
         "Version": "1.0.0"
       },
       "Assemblies": [
+<<<<<<< Updated upstream
         "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll",
         "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll"
       ],
       "Path": "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0"
+=======
+        "C:\\Users\\bobo\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll",
+        "C:\\Users\\bobo\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll"
+      ],
+      "Path": "C:\\Users\\bobo\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0"
+>>>>>>> Stashed changes
     },
     {
       "Package": {
@@ -317,7 +324,11 @@
         "C:\\Users\\bozga\\.nuget\\packages\\uipath.vision\\3.12.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
         "C:\\Users\\bozga\\.nuget\\packages\\uipath.vision\\3.12.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
+<<<<<<< Updated upstream
       "Path": "C:\\Users\\bozga\\.nuget\\packages\\uipath.uiautomation.activities\\24.2.0-preview"
+=======
+      "Path": "C:\\Users\\bobo\\.nuget\\packages\\uipath.uiautomation.activities\\24.2.0-preview"
+>>>>>>> Stashed changes
     }
   ],
   "Conflicts": [],
