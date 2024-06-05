@@ -2,6 +2,17 @@
   "Packages": [
     {
       "Package": {
+        "Id": "EN.ImageDownloader.Activities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll",
+        "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll"
+      ],
+      "Path": "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0"
+    },
+    {
+      "Package": {
         "Id": "HorselessNewspaper.Core.Workflow.Activities",
         "Version": "0.4.230617.5"
       },
@@ -307,17 +318,6 @@
         "C:\\Users\\bozga\\.nuget\\packages\\uipath.vision\\3.12.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\bozga\\.nuget\\packages\\uipath.uiautomation.activities\\24.2.0-preview"
-    },
-    {
-      "Package": {
-        "Id": "EN.ImageDownloader.Activities",
-        "Version": "1.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.Design.dll",
-        "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0\\lib/net6.0-windows7.0/EN.ImageDownloader.Activities.dll"
-      ],
-      "Path": "C:\\Users\\bozga\\.nuget\\packages\\en.imagedownloader.activities\\1.0.0"
     }
   ],
   "Conflicts": [],
